@@ -21,9 +21,9 @@
 
 ## Products and Services 
 
-1. Sales
+1. Sales - leads, Opportunities
 2. Marketing
-3. Service
+3. Service - cases, service agent
 4. Analytics
 5. Community
 6. App
