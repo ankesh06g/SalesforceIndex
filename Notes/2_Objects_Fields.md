@@ -48,7 +48,7 @@
 - Child object can't exist without parent object
 - Child object will inherit all the sharing setting and rule from parent object
 - Cascad Delete
-- You can create a **RollUp-Summery** field on Master record to summerise child records 
+- You can create a **RollUp-Summery** field on Master record to summerise child records
 
 ### 2. Lookup
 
@@ -61,9 +61,8 @@
 Can be edited by either
 
 - Lightning App Builer (From gear icon)
-- Object's Page layouts 
+- Object's Page layouts
 
 ## Validation Rule
 
-We can create a validation rule baed on the fields. 
-We can select the error msg and also the position of error msg
+We can create a validation rule baed on the fields. We can select the error msg and also the position of error msg
