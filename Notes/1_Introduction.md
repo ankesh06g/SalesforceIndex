@@ -1,5 +1,32 @@
 # 1. Introduction
 
 ## Salesforce
-Salesforce is a cloud based company Which provided CRM(customer Relationship Management) services.
 
+- Salesforce is a cloud based company Which provided CRM(customer Relationship Management) services.
+- Cloud: Store, Manage and Process data on cloud.
+- Salesfoce is cloud computing platform who provides *SaaS* and *PaaS*
+- Benefits: Cheaper, Scalable, Collaboration, Hassel-Free
+
+## Multi-tenant Architecture
+
+- One server will be shared by multiple users. eg. Renting apprtment
+- Economical: Resources and maintenance cost will be shared
+- Vendor needs to update only one application and changes will be applied for all clients.
+- Sharing rules enforced by *governer limits*
+
+## Meta-Data Architecture
+
+- Extension of governer limit.
+- Giving access to right users to right application
+
+## Products and Services 
+
+1. Sales
+2. Marketing
+3. Service
+4. Analytics
+5. Community
+6. App
+7. Commerce
+8. IoT
+9. Health
