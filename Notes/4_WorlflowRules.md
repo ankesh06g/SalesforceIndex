@@ -4,7 +4,7 @@ Workflow can
 
 1. **Tasks** — Assign a new task to a user, role, or record owner.
 2. **Email Alerts** — Send an email to one or more recipients you specify.
-3. **Field Updates** — Update the value of a field on a record.
+3. **Field Updates** — Update the value of a field on a record. (**updates only parent records from child and itself**)
 4. **Outbound Messages** — Send a secure, configurable API message (in **XML format**) to a designated listener.
 
 For example,
