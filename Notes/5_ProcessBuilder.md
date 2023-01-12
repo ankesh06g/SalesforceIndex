@@ -31,6 +31,8 @@ It will have at least one automation action. It also have Immidiate and Schedule
 8. Send for Approval
 9. Apex (Aura enabled components)
 
-## Observations
+## Limitations
 
-1. Sheduled Actions are not available for update records trigger
+1. Can't delete a record
+2. Can't update unrelated records
+3. Sheduled Actions are not available for update records trigger
