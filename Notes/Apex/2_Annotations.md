@@ -25,7 +25,13 @@ makes methods available to your Lightning components (both Lightning web compone
 ```
 
 ### 2.2 @Future
-To clreat futur methods
+To clreate future methods
 
 ### 2.4 @InvocableMethod
-Makes method to called from Process Builder and Flows
+Makes method to be called from Process Builder and Flows
+
+### 2.5 @isTest
+Used to create test class and test methods.
+It must be **static** and it must return **void**.
+Test method **can't be Private**.
+Test method can be define within test class only.
