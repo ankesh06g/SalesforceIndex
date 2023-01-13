@@ -1,8 +1,8 @@
 # 3. SOQL
 
 SOQL - Salesforce Object Query Language
-MAX statement size - 20k char
-MAX where clause size - 4k char
+- MAX statement size - 20k char
+- MAX where clause size - 4k char
 
 ## SOQL Vs SQL
 
