@@ -32,3 +32,15 @@ Use **final** keyword for constants.
 |Protected        | * | * | * | | |
 |Public           | * | * | * | * | |
 |Global           | * | * | * | * | * |
+
+## List iteration using for loop
+
+eg:
+```
+List<String> list = new List<String>();
+
+for(String s : list){
+  System.debug(s);
+}
+```
+
