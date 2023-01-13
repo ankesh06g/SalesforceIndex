@@ -1,6 +1,6 @@
-# Apex
+# 1 Apex Basics
 
-## Primitive Datatypes
+## 1.1 Primitive Datatypes
 
 1. Boolean
 2. String
@@ -14,17 +14,17 @@
 10. Blob
 11. Id
 
-## Collections
+## 1.2 Collections
 
 1. List
 2. Set
 3. Map
 
-## Constant
+## 1.3 Constant
 
 Use **final** keyword for constants.
 
-## Access Mpdifier
+## 1.4 Access Mpdifier
 
 | Access Modifier | Within Outer Class | Inner Class | Extended Class | Within Namespace| All |
 |-----------------|--------------------|-------------|----------------|-----------------|-----|
@@ -33,7 +33,7 @@ Use **final** keyword for constants.
 |Public           | * | * | * | * | |
 |Global           | * | * | * | * | * |
 
-## List iteration using for loop
+## 1.5 List iteration using for loop
 
 eg:
 
@@ -45,23 +45,23 @@ for(String s : list){
 }
 ```
 
-## Method Overloading vs Overriding
+## 1.6 Method Overloading vs Overriding
 
 **Method Overloading** - In same class, multiple methods with same name but different parameters or return type. Also call **Polymorphism**.
 **Method Overriding** - 2 or more class, Same methods name with same parameters and return type.
 
-## Static Keyword
+## 1.7 Static Keyword
 
 1. **Static Variable:**  All object can access the same instance of variable.
 2. **Static Methods:** This method can access directly by class name ie. no need to careate objects.
 
-## Naming Conventions
+## 1.8 Naming Conventions
 
 1. Class, Interface : Pascal case
 2. Method, Variable : Camal case
 3. Contanst: Capital Snake case
 
-## Constructor
+## 1.9 Constructor
 
 - Name of constructor is same as class name
 - Automatically called when object is created
@@ -84,7 +84,7 @@ puclic class Student{
 }
 ```
 
-## Initialization Block
+## 1.10 Initialization Block
 
 - Similar to constuctor, gets executed when object is created, but you can't accept paramenters.
 - can have multiple Initialization blocks
@@ -103,21 +103,21 @@ Static {
 }
 ```
 
-## Life Cycle of Apex class
+## 1.11 Life Cycle of Apex class
 
 1. Static Initialization block
 2. Normal Initialization block
 3. Constructor
 
-## Wraper class or Inner class
+## 1.12 Wraper class or Inner class
 
 ```
-Calss Studen{
+Calss Student{
   String name;
   Integer Number;
   List<Subject> sub = new List<Subject>();
 
-  puclic addSucject(Sting name, Integer marks){
+  puclic addSubject(Sting name, Integer marks){
     Subject s = new Subject(name, marks);
     sub.add(s);
   }
