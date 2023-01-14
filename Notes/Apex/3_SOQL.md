@@ -53,3 +53,9 @@ if(a<100){
 
 List<Contact> contacts = Database.query(stringQuery);
 ```
+
+## 3.7 Special Keywords
+
+### 1. ALL ROWS
+
+To get all records includeing deleted records.
