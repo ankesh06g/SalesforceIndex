@@ -5,7 +5,7 @@
 
 ## Operations
 
-1. Insert - Sysntax: ``` java insert sObject|sObject[]; ```
+1. Insert - Sysntax: ```insert sObject|sObject[]; ```
 
   ``` java
   Account newAcct = new Account(name = 'Acme');

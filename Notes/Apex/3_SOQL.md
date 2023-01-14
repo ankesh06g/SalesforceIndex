@@ -44,6 +44,8 @@ List<Contact> contacts = [SELECT ID, Name FROM Contact WHERE Name=:nameVar];
 
 ## 3.6 Dynamic SOQL Queries
 
+Allows to make a dynamic SOQL query at runtime.
+
 ``` java
 Integer a = 369;
 String stringQuery = 'SELECT ID, Name FROM Contact';
@@ -54,8 +56,18 @@ if(a<100){
 List<Contact> contacts = Database.query(stringQuery);
 ```
 
+Disadvantage: SOQL Injection
+Solution: Use ```String.escapeSingleQuotes(String);```
+
 ## 3.7 Special Keywords
 
 ### 1. ALL ROWS
 
-To get all records includeing deleted records.
+To get all records includeing deleted and archived records.
+```isDeleted = True``` for deleted records.
+```isArchived = True``` fro archived records.
+
+### 2. FIELDS(ALL|STANDARD|CUSTOM)
+
+Selects all fields of an object. Similar to *.
+
