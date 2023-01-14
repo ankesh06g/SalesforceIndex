@@ -5,7 +5,7 @@
 
 ## Operations
 
-1. Insert - insert sObject|sObject[]
+1. Insert - Sysntax: ``` java insert sObject|sObject[]; ```
 
   ``` java
   Account newAcct = new Account(name = 'Acme');
@@ -30,8 +30,7 @@
   }
   ```
 
-6. Merge
-  The merge statement merges **up to three records of the same sObject** type into one of the records, deleting the others.
+6. Merge - The merge statement merges **up to three records of the same sObject** type into one of the records, deleting the others.
   Sysntax: ```merge sObject sObject|sObject[]|ID|ID[]```
 
   ``` java
