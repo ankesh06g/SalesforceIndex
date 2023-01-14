@@ -37,14 +37,14 @@
 
 ## 3.5 Bind Variables
 
-```
+``` java
 String nameVar = 'Ankesh';
 List<Contact> contacts = [SELECT ID, Name FROM Contact WHERE Name=:nameVar];
 ```
 
 ## 3.6 Dynamic SOQL Queries
 
-```
+``` java
 Integer a = 369;
 String stringQuery = 'SELECT ID, Name FROM Contact';
 if(a<100){
