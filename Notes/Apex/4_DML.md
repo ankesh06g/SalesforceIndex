@@ -3,7 +3,7 @@
 - **150** DML Statements allowed per Apex class
 - **10,000** records can be handled per DML
 
-## Operations
+## 4.1 Operations
 
 1. Insert - Sysntax: ```insert sObject|sObject[]; ```
 
@@ -45,5 +45,30 @@
   }
 ```
 
-| Database Methods | DML Statement |
-|------------------|---------------|
+## 4.2 Database
+
+**Database is Class and Namespace also.**
+
+### Database Class
+
+Namespace : System
+Methods:
+
+1. countQuery()
+2. insert()
+3. delete()
+4. emptyRecycleBin()
+5. getDeleted()
+6. getQueryLocator()
+7. query()
+8. merge()
+9. undelete()
+10. update()
+11. convertLead()
+
+### Database Namespace
+
+Classes:
+
+1. QueryLocator - getQuery(), iterator()
+2. work in progress...

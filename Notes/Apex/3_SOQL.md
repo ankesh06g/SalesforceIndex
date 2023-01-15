@@ -42,7 +42,17 @@ String nameVar = 'Ankesh';
 List<Contact> contacts = [SELECT ID, Name FROM Contact WHERE Name=:nameVar];
 ```
 
-## 3.6 Dynamic SOQL Queries
+## 3.6 ALL ROWS
+
+To get all records including deleted and archived records.
+```isDeleted = True``` for deleted records.
+```isArchived = True``` fro archived records.
+
+## 3.7 FIELDS(ALL|STANDARD|CUSTOM)
+
+Selects all fields of an object. Similar to *.
+
+## 3.8 Dynamic SOQL Queries
 
 Allows to make a dynamic SOQL query at runtime.
 
@@ -58,16 +68,3 @@ List<Contact> contacts = Database.query(stringQuery);
 
 Disadvantage: SOQL Injection
 Solution: Use ```String.escapeSingleQuotes(String);```
-
-## 3.7 Special Keywords
-
-### 1. ALL ROWS
-
-To get all records includeing deleted and archived records.
-```isDeleted = True``` for deleted records.
-```isArchived = True``` fro archived records.
-
-### 2. FIELDS(ALL|STANDARD|CUSTOM)
-
-Selects all fields of an object. Similar to *.
-
