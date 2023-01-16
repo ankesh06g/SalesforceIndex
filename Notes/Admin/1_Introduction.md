@@ -30,3 +30,12 @@
 7. Commerce
 8. IoT
 9. Health
+
+## Salesforce Sandbox Types
+
+|Sandbox Type | Refresh Interval | Storage Limit | What’s Copied |
+|-------------|------------------|---------------|---------------|
+|Developer Sandbox | 1 day  | 200 MB | Metadata only |
+|Developer Pro Sandbox | 1 day  | 1 GB |Metadata only |
+|Partial Copy Sandbox | 5 days  | 5 GB | Metadata and sample data | 
+|Full Sandbox | 29 days | Same as your production org | Metadata and all data |

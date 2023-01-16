@@ -2,6 +2,7 @@
 
 - It is a poin-and-click tool that lets you easily automate business proceses  and see graphical representation of your process as you build.
 - More powerfull than workflow rules as can perform more things
+- eg. automatic Approval Process submission for Cases
 
 ## 3 Components
 

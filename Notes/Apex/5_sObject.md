@@ -73,3 +73,12 @@ Account b = a.clone();
 Insert b; // Clones only name field. Other fields will not clone.
 ```
 
+## 7. Type of SObject
+
+To retrieve the sObject token.
+
+``` java
+Account acc = new Account(name = 'Acme', description = 'Acme Account');
+Schema.SObjectType expected = Schema.Account.getSObjectType();
+System.assertEquals(expected, acc.getSObjectType());
+```
