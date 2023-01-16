@@ -50,7 +50,10 @@ To get all records including deleted and archived records.
 
 ## 3.7 FIELDS(ALL|STANDARD|CUSTOM)
 
-Selects all fields of an object. Similar to *.
+- Selects all fields of an object. Similar to *.
+- FIELDS(STANDARD) is bounded, so can use in Apex;
+- FIELDS(ALL) and FIELDS(CUSTOM) condidered as unbounded, hece can't use in apex.
+- FIELDS(ALL) and FIELDS(CUSTOM) works in query editor.
 
 ## 3.8 Dynamic SOQL Queries
 

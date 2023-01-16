@@ -49,6 +49,7 @@
 
 **Database is Class and Namespace also.**
 
+
 ### Database Class
 
 Namespace : System
@@ -71,4 +72,23 @@ Methods:
 Classes:
 
 1. QueryLocator - getQuery(), iterator()
-2. work in progress...
+2. QueryLocatorIterator
+3. work in progress...
+
+  ``` java
+  ```
+
+  ``` java
+  String query = 'select id from account';
+  System.debug(Database.getQueryLocator(query));
+
+  Database.QueryLocator q = Database.getQueryLocator(query);
+  System.debug(q.getQuery());
+  Database.QueryLocatorIterator it = q.iterator();
+  System.debug(it);
+
+  while(it.hasNext()){
+    Account a = (Account)it.next();
+    System.debug(a);
+  }
+  ```
