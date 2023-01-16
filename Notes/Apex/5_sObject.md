@@ -2,8 +2,6 @@
 
 Namespace: System
 
-Methods:
-
 ## 1. Retrieving Field
 
 get() - returns as 'object' value which needs to be typecasted to a primitive datatype.
@@ -17,6 +15,8 @@ for(SObject c: contacts){
 
 ## 2. Child-to-Parent - getSObject()
 
+Methods : getSObject()
+
 ``` java
 List<SObject> contacts = [SELECT Name, Account.Name from Contact];
 for(SObject c: contacts){
@@ -26,7 +26,7 @@ for(SObject c: contacts){
 
 ## 3. Parent-to-Child - getSObjects()
 
-Methods : get(), getSObjects()
+Methods : get(), getSObject**s**()
 
 ``` java
 List<SObject> accounts = [SELECT Name, (select name from contacts) from Account];
