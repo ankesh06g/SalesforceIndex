@@ -1,4 +1,4 @@
-# sObject Class
+# SObject Class
 
 Namespace: System
 
