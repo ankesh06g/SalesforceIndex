@@ -1,5 +1,7 @@
 # Exception Handling
 
+**As soon as exception thrown complete transation will Rollback.**
+
 ``` java
 try{
   // Operation
