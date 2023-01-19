@@ -49,6 +49,7 @@
 - Child object will inherit all the sharing setting and rule from parent object
 - Cascad Delete
 - You can create a **RollUp-Summery** field on Master record to summerise child records
+- In rollup summery COUNT, SUM, MIN, MAX these funtions are available. Avg is not available.
 
 ### 2. Lookup
 
@@ -66,3 +67,34 @@ Can be edited by either
 ## Validation Rule
 
 We can create a validation rule baed on the fields. We can select the error msg and also the position of error msg
+
+## Primitive data types: 18
+
+- Checkbox
+- Currency
+- Date
+- Date/Time
+- Email
+- Geolocation
+- Number
+- Percent
+- Phone
+- Picklist
+- Picklist (Multi-Select)
+- Text (255)
+- Text Area
+- Text Area (Long)
+- Text Area (Rich) [Blob]
+- Text (Encrypted)
+- URL
+
+## External ID
+
+- To create relationships between records imported from an external system.
+- To prevent an import from creating duplicate records using Upsert
+
+## Cross-Object Formula
+
+- works with both Master detail and lookup relationship
+- reference fields from objects that are up to 10 relationships away
+- users can see the field on the object even if they don’t have access to that object record. For example, if you create a formula field on the Case object that references an account field, and display that formula field in the case page layout, users can see this field even if they don’t have access to the account record.

@@ -2,12 +2,15 @@
 
 Allows us to perform action before and after changes to salesforce record.
 
-Insert
-Update
-Delete
-Merge
-Upsert
-Undelete
+- Insert
+- Update
+- Delete
+- Merge
+- Upsert
+- Undelete
+
+What is a benefit of using an after insert trigger over using a before insert trigger?
+- An after insert trigger allows a developer to insert other objects that reference the new record.
 
 ## Best practice
 

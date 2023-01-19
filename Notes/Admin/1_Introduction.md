@@ -19,6 +19,12 @@
 - Extension of governer limit.
 - Giving access to right users to right application
 
+## MVC architecture
+
+Model - Objects
+View - VF pages/Components and standard pages
+Controller - Standand/Cutom controller
+
 ## Products and Services
 
 1. Sales - leads, Opportunities

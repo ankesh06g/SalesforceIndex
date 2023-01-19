@@ -37,3 +37,5 @@ It will have at least one automation action. It also have Immidiate and Schedule
 1. Can't delete a record
 2. Can't update unrelated records
 3. Sheduled Actions are not available for update records trigger
+
+>Apex Trigger required instead of a Process Builder Process when an action needs to be taken on a delete or undelete, or before a DML operation is executed.

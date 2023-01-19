@@ -132,3 +132,15 @@ Calss Student{
   }
 }
 ```
+## 1.13 Best Practices
+
+- Bulkify your data manipulation language (DML) statements and use the built-in Limits methods. For more information about Limits methods, see the resources at the end of this unit.
+- Write comments with a good balance between quality and quantity (explain, but don't over-explain). Always provide documentation comments (method and class headers). Provide inline comments only when necessary to clarify complex code.
+- Avoid nesting loops within loops.
+- Avoid SOQL queries and DML statements inside loops.
+- Keep logic out of triggers. (Instead, use a trigger framework.)
+- Create relationships between objects to reduce your number of queries.
+- Avoid hard coded IDs and constants.
+- Increase readability by indenting code and breaking up long lines.
+- Break methods into multiple smaller methods if possible, making your code more modular and easier to read and maintain.
+- Last but not least: adhere to the security guidelines covered in the Develop Secure Web Apps trail. This includes declaring a sharing keyword for every class, and making efforts to prevent XSS and SQL injection.
