@@ -71,3 +71,19 @@ List<Contact> contacts = Database.query(stringQuery);
 
 Disadvantage: SOQL Injection
 Solution: Use ```String.escapeSingleQuotes(String);```
+
+## 3.9 Aggregate Functions
+
+``` java
+AggregateResult[] groupedResult = [SELECT AVG(Anount), MAX(Amount) FROM opportunity];
+
+Double avgAmount = Double.valueOf(groupedResult[0].get('expr0'));
+Double maxAmount = Double.valueOf(groupedResult[0].get('expr1'));
+```
+
+``` java
+AggregateResult[] groupedResult = [SELECT AVG(Anount) avgAmount, MAX(Amount) maxAmount FROM opportunity];
+
+Double avgAmount = Double.valueOf(groupedResult[0].get('avgAmount'));
+Double maxAmount = Double.valueOf(groupedResult[0].get('maxAmount'));
+```

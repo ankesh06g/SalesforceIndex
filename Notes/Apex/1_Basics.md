@@ -111,6 +111,8 @@ Static {
 
 ## 1.12 Wraper class or Inner class
 
+**Note:** Static keyword can't be used inside inner class.
+
 ```
 Calss Student{
   String name;
