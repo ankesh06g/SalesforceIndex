@@ -49,12 +49,16 @@ Trigger simpleTrigger on Account (after insert) {
 - ```trigger.old``` is always read-only.
 - You cannot delete ```trigger.new```.
 
+>What is a benefit of using an after insert trigger over using a before insert trigger?
+> **Ans:** An after insert trigger allows a developer to insert other objects that reference the new record.
+
 ## Trigger Exceptions
 
 Triggers can be used to prevent DML operations from occurring by calling the ```addError()``` method on a record or field. When used on ```Trigger.new``` records in insert and update triggers, and on ```Trigger.old``` records in delete triggers, the custom error message is displayed in the application interface and logged.
 
->What is a benefit of using an after insert trigger over using a before insert trigger?
-> **Ans:** An after insert trigger allows a developer to insert other objects that reference the new record.
+## Deactivating Trigger
+
+From Setup, open apex atrigger and uncheck isActive checkbox.
 
 ## Best practice
 
