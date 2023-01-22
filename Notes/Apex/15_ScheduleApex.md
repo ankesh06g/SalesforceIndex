@@ -16,13 +16,13 @@
 |Day of week|1-7, SUN-SAT|,-*?/L#|
 |Optional Year|null, 1970-2099|,-*/|
 
-> **, : Multiple Values**
-> **- : Range**
-> **asterisk * : All Possible Values**
-> **? : Do not Specify any value**
-> **/ : Specifies increment**
-> **L : Last possible value**
-> **W : Closest week day**
+> **, : Multiple Values** <br>
+> **- : Range**<br>
+> **asterisk * : All Possible Values**<br>
+> **? : Do not Specify any value**<br>
+> **/ : Specifies increment**<br>
+> **L : Last possible value**<br>
+> **W : Closest week day**<br>
 
 ``` java
 global class ScheduledMerge implements Schedulable {
