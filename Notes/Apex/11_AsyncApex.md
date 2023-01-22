@@ -17,6 +17,6 @@
 2. When you make callouts to external Web services
 3. To segregate DML operations and bypass the **mixed DML error**
 
->**mixed DML Operation Error**
-> This error comes when you try to perform DML operations on setup and non-setup objects in a single transaction.
+>**mixed DML Operation Error** <br>
+> This error comes when you try to perform DML operations on setup and non-setup objects in a single transaction.<br>
 > Setup Objects :- ObjectPermissions, PermissionSet, PermissionSetAssignment, QueueSObject, Territory, UserTerritory, UserRole, User
