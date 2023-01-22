@@ -11,6 +11,31 @@
 - Parameters must be Primitive data types or collecction of primitive data types
 - You can't call any async process[batch,schedule,future,queable] from the Future method.
 
+``` java
+global class FutureMethodRecordProcessing
+{
+    @future
+    public static void processRecords(List<ID> recordIds)
+    {   
+         // Get those records based on the IDs
+         List<Account> accts = [SELECT Name FROM Account WHERE Id IN :recordIds];
+         // Process records
+    }
+}
+```
+
+``` java
+global class FutureMethodExample
+{
+    @future(callout=true)
+    public static void getStockQuotes(String acctName)
+    {   
+         // Perform a callout to an external service
+    }
+
+}
+```
+
 ### When to use?
 
 1. When you have a long-running method and need to prevent delaying an Apex transaction
