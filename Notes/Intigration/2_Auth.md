@@ -11,7 +11,7 @@
 2. API Key Based Authentication
 3. O Auth 1.0
 4. O Auth 2.0
-  1. Web Server Flow
-  2. Username password Flow
+    1. Web Server Flow
+    2. Username password Flow
 5. JWT
 
