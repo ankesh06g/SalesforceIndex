@@ -51,6 +51,8 @@
 - You can create a **RollUp-Summery** field on Master record to summerise child records
 - In rollup summery COUNT, SUM, MIN, MAX these funtions are available. Avg is not available.
 
+> **If Master is custom object then child can't be a Standard Object**
+
 ### 2. Lookup
 
 - Child object can exist without parent object

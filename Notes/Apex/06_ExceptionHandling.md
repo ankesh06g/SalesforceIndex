@@ -32,6 +32,10 @@ try{
 
 ## Custom exception
 
+- A custom exception class must extend the system Exception class
+- make sure your class name ends with the word Exception, such as “MyException” or “PurchaseException”
+- A custom exception class can implement one or many interfaces.
+
 ``` java
 public class ProcessException extends Exception {
 

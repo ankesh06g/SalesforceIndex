@@ -3,3 +3,7 @@
 - Annotations
 - Trigger class
 - Limit Class
+- RecordTypeInfo class 
+- @InvocableMethod
+- Apex Flex Queue
+- Adress data type in contact

@@ -146,3 +146,22 @@ Calss Student{
 - Increase readability by indenting code and breaking up long lines.
 - Break methods into multiple smaller methods if possible, making your code more modular and easier to read and maintain.
 - Last but not least: adhere to the security guidelines covered in the Develop Secure Web Apps trail. This includes declaring a sharing keyword for every class, and making efforts to prevent XSS and SQL injection.
+
+## 1.14 Extending a Class
+
+``` java
+public virtual class Marker {
+    public virtual void write() {
+        System.debug('Writing some text.');
+    }
+}
+```
+
+``` java
+// Extension for the Marker class
+public class YellowMarker extends Marker {
+    public override void write() {
+        System.debug('Writing some text using the yellow marker.');
+    } 
+}
+```
