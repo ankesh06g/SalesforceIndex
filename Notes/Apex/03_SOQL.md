@@ -20,6 +20,14 @@
 // Child__c : Name, My_Parent__c(Child Relationship Name:Childrens)
 select Id, (select Id, Name from Childrens__r) from  Parent__c
 ```
+Accessing paarent-to-child in Apex:
+```
+for(Parent__c p: [select Id, Name,(select Id, Name from Childrens__r) from  Parent__c]){
+    for(Child__c c:p.Childrens__r){
+        System.debug('Parent : ' + p.Name + ' -- Child : '+c.Name);
+    }
+}
+```
 
 **Note:** 'Contacts' is **Child relationship name**, can be found in child object.
 
@@ -53,7 +61,7 @@ List<Contact> contacts = [SELECT ID, Name FROM Contact WHERE Name=:nameVar];
 To get all records including deleted and archived records.
 
 ```isDeleted = True``` for deleted records.
-```isArchived = True``` fro archived records(Doesn't mean deleted, after some time period salesforce automatically moves old data from primary storage to secodary storage. This data is not visible in UI, we have to explicitly query them.
+```isArchived = True``` fro archived records(Doesn't mean deleted, after some time period salesforce automatically moves old data from primary storage to secodary storage. This data is not visible in UI, we have to explicitly query them.)
 
 ## 3.7 FIELDS(ALL|STANDARD|CUSTOM)
 
