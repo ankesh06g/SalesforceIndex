@@ -45,8 +45,9 @@ List<Contact> contacts = [SELECT ID, Name FROM Contact WHERE Name=:nameVar];
 ## 3.6 ALL ROWS
 
 To get all records including deleted and archived records.
+
 ```isDeleted = True``` for deleted records.
-```isArchived = True``` fro archived records.
+```isArchived = True``` fro archived records(Doesn't mean deleted, after some time period salesforce automatically moves old data from primary storage to secodary storage. This data is not visible in UI, we have to explicitly query them.
 
 ## 3.7 FIELDS(ALL|STANDARD|CUSTOM)
 
