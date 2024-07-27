@@ -13,14 +13,20 @@
 ## 3.2 Parent-to-child
 
 - Limits: **20** Parent-to-child relationship per query.
-- **No more than 1 level**: ```SELECT Name, (SELECT Contact.Name, FROM Contacts) FROM Account```
+- **No more than 1 level**:
+
+```
+// Parent__c : Name
+// Child__c : Name, My_Parent__c(Child Relationship Name:Childrens)
+select Id, (select Id, Name from Childrens__r) from  Parent__c
+```
 
 **Note:** 'Contacts' is **Child relationship name**, can be found in child object.
 
 ## 3.3 Child-to-Parent
 
 - Limits: **55** Child-to-Parent relationship per query.
-- **No more than 5 level**: ```Contact.Account.Owner.Firstname``` (3 Levels)
+- **No more than 5 level**: ```select Id, My_Parent__c, My_Parent__r.Name from Child__c``` (3 Levels)
 
 **Note:** 'Owner' is **Field name**
 
