@@ -16,9 +16,39 @@
 
 ## 1.2 Collections
 
-1. List
-2. Set
-3. Map
+1. List ```List<String> l1 = new List<String>();```
+     Methods :
+   1. add(data)
+   2. add(index,data)
+   3. addAll(CollectionData)
+   4. remove(index)
+   5. clear()
+   6. contains(data)
+   7. get(index)
+   8. isEmpty()
+   9. size()
+   10. sort()
+2. Set ```Set<String> s1 = new Set<String>();```
+      Methods:
+    1. add(data)
+    2. addAll(collectionData)
+    3. clear()
+    4. contains(data)
+    5. size()
+    6. isEmpty()
+    7. remove(data)
+3. Map ```Map<Integer, String> m1 = new Map<Integer, String>();```
+     Methods:
+   1. clear()
+   2. get(key)
+   3. put(key,data)
+   4. containsKey(key)
+   5. isEmpty()
+   6. keySet()
+   7. values()
+   8. putAll(Map)
+   9. remove(key)
+   10. size()
 
 ## 1.3 Constant
 
